@@ -25,7 +25,7 @@ public class JobController {
     @GetMapping("/{geoID}/{Keyword}")
     public ResponseEntity<List<Datum>> searchJob(@PathVariable String Keyword, @PathVariable String geoID) throws IOException, InterruptedException {
         HttpRequest request = HttpRequest.newBuilder()
-		.uri(URI.create("https://linkedin-data-api.p.rapidapi.com/search-jobs-v2?keywords="+Keyword+"&locationId="+geoID+"&datePosted=anyTime&sort=mostRelevant"))
+        .uri(URI.create("https://linkedin-data-api.p.rapidapi.com/search-jobs-v2?keywords="+Keyword+"&locationId="+geoID+"&datePosted=anyTime&sort=mostRelevant"))
 		.header("x-rapidapi-key", "efa875b554msha464c70acb393b0p108ae5jsnb84ee8b04248")
 		.header("x-rapidapi-host", "linkedin-data-api.p.rapidapi.com")
 		.method("GET", HttpRequest.BodyPublishers.noBody())
