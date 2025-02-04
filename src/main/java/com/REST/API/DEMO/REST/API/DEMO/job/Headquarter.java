@@ -5,8 +5,6 @@ import javax.annotation.processing.Generated;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-
-@Generated("jsonschema2pojo")
 public class Headquarter {
 
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();

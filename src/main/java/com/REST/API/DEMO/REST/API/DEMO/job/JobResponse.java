@@ -1,26 +1,27 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 
 package com.REST.API.DEMO.REST.API.DEMO.job;
 
-import javax.annotation.processing.Generated;
+import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-
+/**
+ *
+ * @author ayushpuri
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Job {
+ public class JobResponse {
 
     private boolean success;
     private String message;
     private List<Datum> data;
     private int total;
-    private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
-
 }
